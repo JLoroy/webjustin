@@ -13,78 +13,44 @@ Released   : 20130902
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title></title>
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-  <link href="/stylesheets/default.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css" media="all" />
+  <title>Justin Loroy's testing place</title>
+  <meta name="keywords" content="Justin, Loroy" />
+  <meta name="description" content="A little website about myself and my projects" />
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/stylesheets/default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+  <script src="https://code.angularjs.org/1.3.15/i18n/angular-locale_fr-be.js"></script>
+  <script src="javascripts/home.js"></script>
+
 
   <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
-<body>
+<body ng-App="home" ng-controller="homeController">
 <div id="page" class="container">
   <div id="header">
     <div id="logo">
-      <img src="images/pic02.jpg" alt="" />
-      <h1><a href="#">Privy</a></h1>
-      <span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></span>
+      <img src="images/me.jpg" alt="" />
+      <h1><a href="#">Justin Loroy</a></h1>
     </div>
     <div id="menu">
       <ul>
-        <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-        <li><a href="#" accesskey="2" title="">Nothing here</a></li>
-        <li><a href="#" accesskey="3" title="">Neither here</a></li>
-        <li><a href="#" accesskey="4" title="">Nope</a></li>
-        <li><a href="#" accesskey="5" title="">Nothing</a></li>
+        <li ng-class="{current_page_item:isActive('main')}"><a href="#" accesskey="1" title="" ng-click="activePanel='main'">Homepage</a></li>
+        <li ng-class="{current_page_item:isActive('mine')}"><a href="#" accesskey="2" title="" ng-click="activePanel='mine'">Nothing here</a></li>
+        <li ng-class="{current_page_item:isActive('shelve')}"><a href="#" accesskey="3" title="" ng-click="activePanel='shelve'">Shelve Sound & Swag System</a></li>
+        <li ng-class="{current_page_item:isActive('sound')}"><a href="#" accesskey="4" title="" ng-click="activePanel='sound'">Music System Project</a></li>
+        <li ng-class="{current_page_item:isActive('??')}"><a href="#" accesskey="5" title="" ng-click="activePanel='??'">Nothing</a></li>
       </ul>
     </div>
   </div>
   <div id="main">
-    <div id="banner">
-      <img src="images/pic01.jpg" alt="" class="image-full" />
-    </div>
-    <div id="welcome">
-      <div class="title">
-        <h2>#Swag</h2>
-        <span class="byline">Nothing Serious here</span>
-      </div>
-      <ul class="actions">
-        <li><a href="#" class="button">Click Me</a></li>
-      </ul>
-    </div>
-    <div id="featured">
-      <div class="title">
-        <h2>What's going on here</h2>
-        <span class="byline">See all those little app project I have for this place</span>
-      </div>
-      <ul class="style1">
-        <li class="first">
-          <p class="date"><a href="#">Sep<b>15</b></a></p>
-          <h3>Sound and Swag Shelves</h3>
-          <p><a href="#">That's a little idea I had for my gf. It is near to nothing related to my domain, computer sciences, but I love doing some extra stuff outside my computer</a></p>
-        </li>
-        <li>
-          <p class="date"><a href="#">Oct<b>20</b></a></p>
-          <h3>Minesweeper AI contest</h3>
-          <p><a href="#">I'm excited about making a little game, the well known minesweeper, and let poeple upload their AI to resolve it. Then, maybe extend it to snake</a></p>
-        </li>
-        <li>
-          <p class="date"><a href="#">Jan<b>01</b></a></p>
-          <h3>Happy New Year</h3>
-          <p><a href="#">Big party is coming in. We're looking for the place but we hope, and we know, this will be legendary, as always !</a></p>
-        </li>
-        <li>
-          <p class="date"><a href="#">Dec<b>15</b></a></p>
-          <h3>Genetic Algorithm</h3>
-          <p><a href="#">I would love to have a genetic algorithm running 24/7 on this server. I have to ask the host if I can do that.</a></p>
-        </li>
-      </ul>
-    </div>
-    <div id="copyright">
-      <span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span>
-    </div>
+    <div ng-include="'/templates/homeMain.ejs'" ng-if="isActive('main')"></div>
+      <div ng-include="'/templates/soundPlayer.ejs'" ng-if="isActive('sound')"></div>
+      <div ng-include="'/templates/shelve.ejs'" ng-if="isActive('shelve')"></div>
   </div>
 </div>
 </body>
