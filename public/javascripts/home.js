@@ -1,11 +1,12 @@
 var app = angular.module('home',[]);
 
-app.controller('homeController', ['$scope', '$filter', '$http', function($scope, $filter, $http){
+app.controller('homeController', ['$scope', '$filter', '$http','$window', function($scope, $filter, $http, $window){
     $scope.activePanel = 'main';
     $scope.isActive = function(name){
         return name == $scope.activePanel
     }
     $scope.connected=false;
+    $scope.permission = 0;
     $scope.password = "";
     $scope.connect = function(){
         if($scope.password == ""){
@@ -16,6 +17,7 @@ app.controller('homeController', ['$scope', '$filter', '$http', function($scope,
                 .then(function(res){
                     $http.post('permName').then(function(res2){
                         $scope.permName = res2.data.permName;
+                        $scope.permission = res2.data.permission;
                         if($scope.permName != "Stranger") $scope.connected = true;
                         console.log(res2);
                     });
@@ -24,6 +26,7 @@ app.controller('homeController', ['$scope', '$filter', '$http', function($scope,
     };
     $http.post('permName').then(function(res2){
         $scope.permName = res2.data.permName;
+        $scope.permission = res2.data.permission;
         if($scope.permName != "Stranger") $scope.connected = true;
         console.log(res2);
     });
@@ -32,10 +35,16 @@ app.controller('homeController', ['$scope', '$filter', '$http', function($scope,
             .then(function(res){
                 $http.post('permName').then(function(res2){
                     $scope.permName = res2.data.permName;
+                    $scope.permission = res2.data.permission;
                     if($scope.permName == "Stranger") $scope.connected = false;
                     console.log(res2);
                 });
             });
     };
 
+    $scope.goToPage = function(page){
+        console.log("go to "+page);
+        $window.location.href = '/'+page;
+
+    }
 }]);

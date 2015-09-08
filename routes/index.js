@@ -48,10 +48,10 @@ router.post('/permName', function(req,res,next){
     sess = req.session;
     console.log(sess);
     if(req.session.permName){
-        res.send({permName:req.session.permName});
+        res.send({permName:req.session.permName, permission:req.session.permission});
     }
     else{
-        res.send({permName:"Stranger"});
+        res.send({permName:"Stranger", permission:0});
     }
 
 });
