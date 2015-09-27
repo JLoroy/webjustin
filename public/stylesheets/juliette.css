@@ -7,7 +7,7 @@
     overflow: hidden;
     margin: 0em auto;
     width: 1200px;
-    background-image: '../images/ju/kiss.png'';
+    background-image: '../images/ju/kiss.png';
 }
 
 #main
@@ -32,6 +32,32 @@
 }
 
 
+/*********************************************************************************/
+/* Letter                                                              */
+/*********************************************************************************/
+
+.letter {
+    border-radius: 2%;
+    background-color: rgba(28, 31, 35, 0.53);
+    padding-left:15%;
+    padding-right:15%;
+
+}
+
+.letter p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6em;
+    color: #ffffff;
+    margin-top:5%;
+
+
+}
+.letter h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    margin-top:5%;
+}
 /*********************************************************************************/
 /* Button Style                                                                  */
 /*********************************************************************************/
@@ -83,7 +109,7 @@ h1, h2, h3
     margin: 0;
     padding: 0;
     font-weight: 600;
-    color: #ec6c82;
+    color: rgb(255, 255, 255);
 }
 
 /*********************************************************************************/

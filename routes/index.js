@@ -67,11 +67,21 @@ router.get('/juliette',  function(req, res, next) {
 
 
 router.get('/nico',  function(req, res, next) {
-    if(req.session.permission > 1){
+    if(req.session.permission > 0){
         res.render('nico',{session:req.session});
     }
     else{
         res.render('unauthorized',{});
     }
 });
+
+
+router.get('/armand',  function(req, res, next) {
+    res.render('armand',{session:req.session});
+});
+
+router.get('/hatonjeu',  function(req, res, next) {
+    res.render('hatonjeu',{session:req.session});
+});
+
 module.exports = router;

@@ -51,9 +51,10 @@ Released   : 20130902
         <li ng-class="{current_page_item:isActive('mine')}"><a href="#" accesskey="2" title="" ng-click="activePanel='mine'">Nothing here</a></li>
         <li ng-class="{current_page_item:isActive('shelve')}"><a href="#" accesskey="3" title="" ng-click="activePanel='shelve'">Shelve Sound & Swag System</a></li>
         <li ng-class="{current_page_item:isActive('sound')}"><a href="#" accesskey="4" title="" ng-click="activePanel='sound'">Music System Project</a></li>
-          <li ng-if="permission>2"><a ng-click="goToPage('juliette');">Juliette</a></li>
-          <li ng-if="permission>0"><a ng-click="goToPage('nico');">Nico</a></li>
-          <li ng-class="{current_page_item:isActive('??')}"><a href="#" accesskey="5" title="" ng-click="activePanel='??'">Nothing</a></li>
+        <li ng-if="permission>2"><a ng-click="goToPage('juliette');">Juliette</a></li>
+        <li ng-if="permission>0"><a ng-click="goToPage('nico');">Nico</a></li>
+        <li><a ng-click="goToPage('armand');">Armand Container</a></li>
+        <li ng-class="{current_page_item:isActive('??')}"><a href="#" accesskey="5" title="" ng-click="activePanel='??'">Nothing</a></li>
       </ul>
     </div>
   </div>
