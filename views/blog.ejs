@@ -34,16 +34,11 @@ Released   : 20130902
 <div id="page" class="container">
   <div id="header">
     <div id="logo">
-      <img src="images/me.jpg" alt="" />
-      <h1><a href="#">Justin Loroy</a></h1>
+      <a ng-click="goToPage('');"><img src="images/me.jpg" alt="" /></a>
+      <h1><a ng-click="goToPage('');">Justin Loroy</a></h1>
     </div>
-    <form id="connect" ng-submit="connect();" ng-class="{hidden:connected}">
-      <input type="text" ng-model="password">
-      <a type="submit" class="button">Connect</a>
-    </form>
     <div id="connected" ng-class="{hidden:!connected}">
         <h3>Hello, {{permName}}</h3>
-        <a ng-click="disconnect();">Disconnect</a>
     </div>
     <div id="menu">
       <ul>
@@ -59,7 +54,7 @@ Released   : 20130902
     </div>
   </div>
   <div id="main">
-    <div ng-include="'/templates/homeMain.ejs'" ng-if="isActive('main')"></div>
+      <div ng-include="'/templates/homeMain.ejs'" ng-if="isActive('main')"></div>
       <div ng-include="'/templates/soundPlayer.ejs'" ng-if="isActive('sound')"></div>
       <div ng-include="'/templates/shelve.ejs'" ng-if="isActive('shelve')"></div>
   </div>

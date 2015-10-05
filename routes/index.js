@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
     console.log("load home, isConnected?:"+req.session.permName);
-  res.render('home',{session:req.session});
+  res.render('serious',{session:req.session});
 });
 
 router.post('/authorization', function(req,res,next){
@@ -69,6 +69,15 @@ router.get('/juliette',  function(req, res, next) {
 router.get('/nico',  function(req, res, next) {
     if(req.session.permission > 0){
         res.render('nico',{session:req.session});
+    }
+    else{
+        res.render('unauthorized',{});
+    }
+});
+
+router.get('/blog',  function(req, res, next) {
+    if(req.session.permission > 0){
+        res.render('blog',{session:req.session});
     }
     else{
         res.render('unauthorized',{});

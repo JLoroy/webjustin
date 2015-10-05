@@ -42,6 +42,15 @@ app.controller('homeController', ['$scope', '$filter', '$http','$window', functi
             });
     };
 
+    $scope.isConnected = function(){
+        console.log("is connected?");
+        console.log($scope.connected)
+        return $scope.connected
+    };
+    $scope.hiddenIfConnected = function(){
+        return $scope.connected?"hidden":"";
+    }
+
     $scope.goToPage = function(page){
         console.log("go to "+page);
         $window.location.href = '/'+page;
