@@ -93,4 +93,9 @@ router.get('/hatonjeu',  function(req, res, next) {
     res.render('hatonjeu',{session:req.session});
 });
 
+
+router.get('/annifjuju',  function(req, res, next) {
+    res.render('annifjuju',{session:req.session});
+});
+
 module.exports = router;

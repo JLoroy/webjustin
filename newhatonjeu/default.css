@@ -8,7 +8,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	background: #212983;
+	background: #45543D;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 12pt;
 	font-weight: 300;
@@ -371,7 +371,7 @@ ul.contact li a.icon-rss:before
 #header
 {
 	position: relative;
-	height: 130px;
+	height: 100px;
 }
 
 /*********************************************************************************/
@@ -475,7 +475,7 @@ ul.contact li a.icon-rss:before
 	#header-featured
 	{
 		padding: 7em 0em;
-		background-image: url(images/pic02.jpg);
+		background-image: url(images/banner.jpg);
 		background-position: center;
 		background-size: cover;
 		border-bottom: 8px solid #45543D;
@@ -933,7 +933,7 @@ ul.contact li a.icon-rss:before
 #wel
 {
 	padding: 5em 0em;
-	background: #8a9ce8;
+	background: #E8E7C1;
 	text-align: center;
 }
 
@@ -946,13 +946,7 @@ ul.contact li a.icon-rss:before
 {
 	padding-bottom: 0.50em;
 	font-weight: 400;
-	font-size: 2em;
-}
-
-#wel p
-{
-	font-size: 1em;
-	color:#FFFFFF;
+	font-size: 3em;
 }
 
 #wel .button
