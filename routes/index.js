@@ -4,7 +4,11 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
     console.log("load home, isConnected?:"+req.session.permName);
-  res.render('serious',{session:req.session});
+    res.render('serious',{session:req.session});
+});
+router.get('/magasin', function(req, res, next) {
+    console.log("load home, isConnected?:"+req.session.permName);
+    res.render('serious',{session:req.session});
 });
 
 router.post('/authorization', function(req,res,next){
@@ -56,14 +60,16 @@ router.post('/permName', function(req,res,next){
 
 });
 
-router.get('/juliette',  function(req, res, next) {
-    if(req.session.permission > 2){
-        res.render('juliette',{session:req.session});
+var aventCalendar = require("./aventCalendar");
+router.get('/avent',  function(req, res, next) {
+    if(req.session.permission > 0){
+        res.render('avent',{session:req.session});
     }
     else{
         res.render('unauthorized',{});
     }
 });
+router.get('/aventCalendar', aventCalendar.calendar);
 
 
 router.get('/nico',  function(req, res, next) {
@@ -92,10 +98,4 @@ router.get('/armand',  function(req, res, next) {
 router.get('/hatonjeu',  function(req, res, next) {
     res.render('hatonjeu',{session:req.session});
 });
-
-
-router.get('/annifjuju',  function(req, res, next) {
-    res.render('annifjuju',{session:req.session});
-});
-
 module.exports = router;

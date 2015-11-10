@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="stylesheets/serious/serious.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
@@ -30,7 +30,7 @@
 
         <!-- Logo -->
         <div id="logo">
-            <span class="image avatar48"><img src="images/me.jpg" alt="" /></span>
+            <span class="image avatar48"><img src="images/poulpy.jpg" alt="" /></span>
             <h1 id="title">Justin Loroy</h1>
             <p>Computer Scientist</p>
         </div>
@@ -56,12 +56,12 @@
                 <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
             </ul>
             <ul>
-                <li ng-if="permission>0"><a ng-click="goToPage('blog');"><span class="label">Blog</span></a></li>
-                <li ng-if="permission>2"><a ng-click="goToPage('juliette');"><span class="label">Juliette</span></a></li>
-                <li ng-if="permission>0"><a ng-click="goToPage('nico');"><span class="label">Nico</span></a></li>
-                <li><a ng-click="goToPage('armand');"><span class="label">Armand Container</span></a></li>
-                <li><a ng-click="goToPage('hatonjeu');"><span class="label">Hatonjeu</span></a></li>
-                <li><a ng-click="goToPage('annifjuju');"><span class="label">Anniversaire de Juliette</span></a></li>
+                <li ng-if="permission>0"><a href="#" ng-click="goToPage('blog');"><span class="label">Blog</span></a></li>
+                <li ng-if="permission>2"><a href="#" ng-click="goToPage('juliette');"><span class="label">Juliette</span></a></li>
+                <li ng-if="permission>0"><a href="#" ng-click="goToPage('nico');"><span class="label">Nico</span></a></li>
+                <li><a href="#" ng-click="goToPage('armand');"><span class="label">Armand Container</span></a></li>
+                <li><a href="#" ng-click="goToPage('hatonjeu');" class="skel-layers-ignoreHref"><span class="label">Hatonjeu</span></a></li>
+                <li ng-if="permission>0"><a href="#" ng-click="goToPage('avent');"><span class="label">Calendrier de l'avent</span></a></li>
             </ul>
         </nav>
 
@@ -208,12 +208,10 @@
 
 <!-- Footer -->
 <div id="footer">
-
-
     <!-- Copyright -->
     <ul class="copyright">
         <li><p ng-if="connected">Permission level {{permission}}</p></li>
-        <li><a href="http://tonyholmsten.deviantart.com/art/killer-is-dead-concept-art-407343587">Killer is Dead Concept art by Tony holmsten</a></li>
+        <!--<li><a href="http://tonyholmsten.deviantart.com/art/killer-is-dead-concept-art-407343587">Killer is Dead Concept art by Tony holmsten</a></li>-->
         <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
     </ul>
 

@@ -17,8 +17,8 @@ Released   : 20130902
   <meta name="keywords" content="Justin, Loroy" />
   <meta name="description" content="A little website about myself and my projects" />
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="/stylesheets/default.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/stylesheets/blog/blog.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/stylesheets/blog/blog_fonts.css" rel="stylesheet" type="text/css" media="all" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
   <script src="/bootstrap/js/bootstrap.js"></script>
@@ -34,7 +34,7 @@ Released   : 20130902
 <div id="page" class="container">
   <div id="header">
     <div id="logo">
-      <a ng-click="goToPage('');"><img src="images/me.jpg" alt="" /></a>
+      <a ng-click="goToPage('');"><img src="images/minime.jpg" alt="" /></a>
       <h1><a ng-click="goToPage('');">Justin Loroy</a></h1>
     </div>
     <div id="connected" ng-class="{hidden:!connected}">
@@ -42,14 +42,13 @@ Released   : 20130902
     </div>
     <div id="menu">
       <ul>
-        <li ng-class="{current_page_item:isActive('main')}"><a href="#" accesskey="1" title="" ng-click="activePanel='main'">Homepage</a></li>
+        <li ng-class="{current_page_item:isActive('main')}"><a href="#" accesskey="1" title="" ng-click="goToPage('')">Homepage</a></li>
         <li ng-class="{current_page_item:isActive('mine')}"><a href="#" accesskey="2" title="" ng-click="activePanel='mine'">Nothing here</a></li>
         <li ng-class="{current_page_item:isActive('shelve')}"><a href="#" accesskey="3" title="" ng-click="activePanel='shelve'">Shelve Sound & Swag System</a></li>
         <li ng-class="{current_page_item:isActive('sound')}"><a href="#" accesskey="4" title="" ng-click="activePanel='sound'">Music System Project</a></li>
-        <li ng-if="permission>2"><a ng-click="goToPage('juliette');">Juliette</a></li>
         <li ng-if="permission>0"><a ng-click="goToPage('nico');">Nico</a></li>
-        <li><a ng-click="goToPage('armand');">Armand Container</a></li>
-        <li ng-class="{current_page_item:isActive('??')}"><a href="#" accesskey="5" title="" ng-click="activePanel='??'">Nothing</a></li>
+        <li><a href="#" ng-click="goToPage('armand');">Armand Container</a></li>
+        <li><a href="#" ng-click="goToPage('hatonjeu');">Hatonjeu</a></li>
       </ul>
     </div>
   </div>
