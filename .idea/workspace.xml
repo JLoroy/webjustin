@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8690068-fd59-4784-ad00-f464414dd1b0" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\Catalogue Jeux en bois 2015.pdf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\Dropbox - Prix 2015.pdf.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\banner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\pic01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\pic02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\pic03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\pic04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\pic05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\pic06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\scr01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\scr02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\scr03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Justin\webjustin\public\hatonjeu\images\scr04.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/hatonjeu/default.css" afterPath="$PROJECT_DIR$/public/hatonjeu/default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/hatonjeu.ejs" afterPath="$PROJECT_DIR$/views/hatonjeu.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
     </list>
     <ignored path="webjustin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2507,20 +2492,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.45845968">
       <split-first>
         <leaf>
-          <file leaf-file-name="hatonjeu.ejs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="hatonjeu.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/hatonjeu.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.769231">
-                  <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+                <state vertical-scroll-proportion="0.40963855">
+                  <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="default.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/hatonjeu/default.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.87068963">
+                <state vertical-scroll-proportion="-18.703703">
                   <caret line="978" column="14" selection-start-line="978" selection-start-column="14" selection-end-line="978" selection-end-column="14" />
                   <folding />
                 </state>
@@ -2658,12 +2643,12 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/hatonjeu.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/views/hatonjeu.ejs" />
         <option value="$PROJECT_DIR$/public/hatonjeu/default.css" />
         <option value="$PROJECT_DIR$/views/hatonjeu/about.ejs" />
         <option value="$PROJECT_DIR$/views/hatonjeu/events.ejs" />
         <option value="$PROJECT_DIR$/views/hatonjeu/contact.ejs" />
         <option value="$PROJECT_DIR$/views/hatonjeu/jeux.ejs" />
+        <option value="$PROJECT_DIR$/views/hatonjeu.ejs" />
       </list>
     </option>
   </component>
@@ -3241,14 +3226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/hatonjeu.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3259,7 +3236,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/hatonjeu/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87068963">
+        <state vertical-scroll-proportion="-18.703703">
           <caret line="978" column="14" selection-start-line="978" selection-start-column="14" selection-end-line="978" selection-end-column="14" />
           <folding />
         </state>
@@ -3312,6 +3289,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70740104">
           <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/hatonjeu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40963855">
+          <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
           <folding />
         </state>
       </provider>
