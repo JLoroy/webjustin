@@ -971,3 +971,10 @@ ul.contact li a.icon-rss:before
 	font-size: 1.2em;
 	color: #A2A2A2;
 }
+
+
+.about-container{
+	margin-left : 25%;
+	margin-right : 25%;
+	width:50%;
+}

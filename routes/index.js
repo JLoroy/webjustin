@@ -98,4 +98,16 @@ router.get('/armand',  function(req, res, next) {
 router.get('/hatonjeu',  function(req, res, next) {
     res.render('hatonjeu',{session:req.session});
 });
+router.get('/hatonjeu/about',  function(req, res, next) {
+    res.render('hatonjeu/about',{session:req.session});
+});
+router.get('/hatonjeu/jeux',  function(req, res, next) {
+    res.render('hatonjeu/jeux',{session:req.session});
+});
+router.get('/hatonjeu/events',  function(req, res, next) {
+    res.render('hatonjeu/events',{session:req.session});
+});
+router.get('/hatonjeu/contact',  function(req, res, next) {
+    res.render('hatonjeu/contact',{session:req.session});
+});
 module.exports = router;
