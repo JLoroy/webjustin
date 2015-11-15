@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8690068-fd59-4784-ad00-f464414dd1b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/hatonjeu.ejs" afterPath="$PROJECT_DIR$/views/hatonjeu.ejs" />
-    </list>
+    <list default="true" id="f8690068-fd59-4784-ad00-f464414dd1b0" name="Default" comment="" />
     <ignored path="webjustin.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
