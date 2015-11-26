@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Justin Loroy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="stylesheets/serious/serious.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="https://code.angularjs.org/1.3.15/i18n/angular-locale_fr-be.js"></script>
+    <script src="javascripts/home.js"></script>
+</head>
+<body  ng-App="home" ng-controller="homeController">
+
+<!-- Header -->
+<div id="header">
+
+    <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+            <h1 id="title">Justin Loroy</h1>
+            <p>Computer Scientist</p>
+            <span class="image avatar48"><img src="http://i.imgur.com/CYU8JsN.gif" alt="" /></span>
+            <a style="width:50px;height:50px;" href="http://i.imgur.com/CYU8JsN.gif"></a>
+        </div>
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+            -->
+            <ul>
+                <li><a href="/#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                <li><a href="/#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                <li><a href="/#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                <li><a href="/#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+            </ul>
+            <ul>
+                <li ng-if="permission>0"><a href="/blog"><span class="label">Blog</span></a></li>
+                <li ng-if="permission>0"><a href="/nico"><span class="label">Nico</span></a></li>
+                <li><a href="/armand"><span class="label">Armand Container</span></a></li>
+                <li><a href="/hatonjeu" class="skel-layers-ignoreHref"><span class="label">Hatonjeu</span></a></li> <!--ng-click="goToPage('hatonjeu');"-->
+                <li><a ng-if="permission>0"><a href="/avent"><span class="label">Calendrier de l'avent</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="bottom">
+
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="https://twitter.com/JustinLoroy" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/justin.loroy" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <!--<li><a href="https://github.com/JLoroy" class="icon fa-github"><span class="label">Github</span></a></li>-->
+            <li><a href="mailto:justin@loroy.be" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://www.linkedin.com/in/justin-loroy-885a1462" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- Main -->
+<div id="main">
+    <section id="top" class="one dark cover">
+        <div class="container">
+            <header>
+                <img src="/images/cgpng.png"></img>
+                <h2 class="alt">Le Coin Gourmand</h2>
+                <h3 style="text-align:center;width:48%;float:left;">Central Order System</h3>
+                <h3 style="text-align:center;width:48%;float:right;">Carnet de commande informatique</h3>
+            </header>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <p style="text-align:justify;width:48%;float:left;"><strong>Implementation and installation of a real-time order system for a bakery <a href="http://www.lecoingourmand.be">(Le coin gourmand)</a>.
+                The company has four shops and two bakeries where the products are created. Each shop has one terminal and can send order and visualize them.
+                On the other side, the products are summarized by category such that the bakers can access the important information faster.</strong></p>
+            <p style="text-align:justify;width:48%;float:right;"><strong>Implémentation et installation d'un système en temps réel de communication de commande dans une boulangerie <a href="http://www.lecoingourmand.be">(Le coin gourmand)</a>.
+            La société se compose de 4 magasins et deux ateliers. Chacune des boulangerie est équipée d'un terminal et peux envoyer des commande ou les consulter.
+            De l'autre côté, les produits sont regroupés de telle sorte que les boulangers peuvent visualiser rapidement l'information dont ils ont besoin.</strong></p>
+        </div>
+
+        <div class="container" style="margin-bottom:75px;">
+            <a href="images/cg/magasin_consult.png"><img style="width:60%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/cg/magasin_consult.png"></img></a>
+            <figcaption>Order consultation -- Consultation des commande</figcaption>
+        </div>
+        <div class="container">
+            <p style="text-align:justify;width:48%;float:left;">The project started in february 14, we kept it the most professional way. First we decided with wireframe how the interface will look. Then we designed the structure of the project.
+            We first launched a prototype of a WGI webserver in python. We bought a centOS server and installed a second version, with a bootstrap design. Once it was finished, in may 15, we installed it inside the main shop
+            . We had good results, but the company was migrating its ressources to the cloud, so we refactored our application to make it more web-based. This third and final version was developped with NodeJS/ExpressJS/AngularJS.
+            We deployed it in october 15 in all the shops.
+            </p>
+            <p style="text-align:justify;width:48%;float:right;">Le projet a débuté en février 2014, il a été conduit de la manière la plus professionelle possible. Nous avons d'abord rendu des premiers-jet de l'interface que l'utilisateur désirait obtenir,
+                ensuite nous avons lancé un prototype avec un serveur CGI en Python. Nous avons ensuite acheté un serveur et installé la deuxieme version, comprenant tout un design bootstrap.
+                Une fois le projet terminé, en mai 2014, nous avons installé le serveur dans une première boulangerie et démarré la mise en production. Le resultat s'avéra concluant, mais entre-temps, l'entreprise a décidé
+                de délocaliser ses ressources vers le cloud, sur un serveur distant. Nous avons alors remanié entièrement l'application et l'avons développé avec un moteur NodeJs/expressJS en utilisant angularJS pour
+                le front-end. Cette version finale fut mise en production en octobre 2015 et installé dans tous les magasins.</p>
+
+            <div style="margin-bottom:75px;">
+                <a href="images/cg/magasin_produits.png"><img style="width:60%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/cg/magasin_produits.png"></img></a>
+                <figcaption>Order making -- Prise de commande</figcaption>
+            </div>
+
+            <p style="text-align:justify;width:48%;float:left;">
+                The system is used by 51 salers and 20 bakers. Today (26 november 2015), we already counted mode than 3300 orders for a total of 1500 clients.
+            </p>
+            <p style="text-align:justify;width:48%;float:right;">Le système est utilisé par un peu plus de cinquante vendeuses et une vingtaine de boulanger-patissiers. Aujourd'hui (26 novembre 2015),
+                il a comptabilisé plus de 3300 commandes pour 1500 clients.</p>
+
+
+            <div style="margin-bottom:75px;">
+                <a href="images/cg/atelier_consult.png"><img style="width:60%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/cg/atelier_consult.png"></img></a>
+                <figcaption>Baker's visualisation -- Visualisation des produits</figcaption>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li><p ng-if="connected">Permission level {{permission}}</p></li>
+        <!--<li><a href="http://tonyholmsten.deviantart.com/art/killer-is-dead-concept-art-407343587">Killer is Dead Concept art by Tony holmsten</a></li>-->
+        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollzer.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

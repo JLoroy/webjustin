@@ -61,7 +61,7 @@
                 <li ng-if="permission>2"><a href="#" ng-click="goToPage('juliette');"><span class="label">Juliette</span></a></li>
                 <li ng-if="permission>0"><a href="#" ng-click="goToPage('nico');"><span class="label">Nico</span></a></li>
                 <li><a href="#" ng-click="goToPage('armand');"><span class="label">Armand Container</span></a></li>
-                <li><a href="#" ng-click="goToPage('hatonjeu');" class="skel-layers-ignoreHref"><span class="label">Hatonjeu</span></a></li>
+                <li><a href="/hatonjeu" class="skel-layers-ignoreHref"><span class="label">Hatonjeu</span></a></li> <!--ng-click="goToPage('hatonjeu');"-->
                 <li ng-if="permission>0"><a href="#" ng-click="goToPage('avent');"><span class="label">Calendrier de l'avent</span></a></li>
             </ul>
         </nav>
@@ -74,8 +74,9 @@
         <ul class="icons">
             <li><a href="https://twitter.com/JustinLoroy" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
             <li><a href="https://www.facebook.com/justin.loroy" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="https://github.com/JLoroy" class="icon fa-github"><span class="label">Github</span></a></li>
+            <!--<li><a href="https://github.com/JLoroy" class="icon fa-github"><span class="label">Github</span></a></li>-->
             <li><a href="mailto:justin@loroy.be" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://www.linkedin.com/in/justin-loroy-885a1462" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
         </ul>
 
     </div>
@@ -114,13 +115,13 @@
                 <h2>Portfolio</h2>
             </header>
 
-            <p>Here are some links to projects I have realised these last years. Some are only drafts, others went pretty far.</p>
-            <p> Voici quelques liens vers des projets que j'ai pu réaliser du bout du clavier ces dernières années. Certains sont de simples ébauches, d'autres sont des projets plus aboutis.</p>
+            <p style="text-align:justify;width:48%;float:left;">Here are some links to projects I have realised these last years. Some are only drafts, others went pretty far.</p>
+            <p style="text-align:justify;width:48%;float:right;"> Voici quelques liens vers des projets que j'ai pu réaliser du bout du clavier ces dernières années. Certains sont de simples ébauches, d'autres sont des projets plus aboutis.</p>
 
            <div class="row">
                 <div class="4u 12u$(mobile)">
                     <article class="item">
-                        <a href="https://play.google.com/store/apps/details?id=be.ac.ucl.lfsab1509.myhumanfarm" class="image fit"><img src="images/mhf.gif" alt="" /></a>
+                        <a href="/mhf" class="image fit"><img src="images/mhf/mhf.gif" alt="" /></a>
                         <header>
                             <h3><a href="https://play.google.com/store/apps/details?id=be.ac.ucl.lfsab1509.myhumanfarm">My Human Farm</a></h3>
                             <h1>2014</h1>
@@ -130,7 +131,7 @@
                         </header>
                     </article>
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/cg.png" alt="" /></a>
+                        <a href="/cg" class="image fit"><img src="images/cg.png" alt="" /></a>
                         <header>
                             <h3>Coin Gourmand</h3>
                             <p>With a friend, we developped for the Bakery <a href="http://www.lecoingourmand.be">Le Coin Gourmand</a> a system to centralize the orders between the shops.</p>
@@ -138,34 +139,36 @@
                         </header>
                     </article>
                 </div>
-                <!--<div class="4u 12u$(mobile)">
+                <div class="4u 12u$(mobile)">
                     <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+                        <a href="/improc" class="image fit"><img src="images/improc/improc.png" alt="" /></a>
                         <header>
-                            <h3>Magna Nullam</h3>
+                            <h3>Image Processing</h3>
+                            <p>In the context of a class project, we built a model that was used to label parts of an image.</p>
+                            <p>Dans le cadre d'un projet de cours, nous avons développé un modèle utilisé pour reconnaitre les parties d'une image.</p>
                         </header>
                     </article>
-                    <article class="item">
+                    <!-- <article class="item">
                         <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
                         <header>
                             <h3>Natoque Vitae</h3>
                         </header>
-                    </article>
+                    </article> -->
                 </div>
-                <div class="4u$ 12u$(mobile)">
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-                        <header>
-                            <h3>Dolor Penatibus</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-                        <header>
-                            <h3>Orci Convallis</h3>
-                        </header>
-                    </article>
-                </div>-->
+               <!-- <div class="4u$ 12u$(mobile)">
+                   <article class="item">
+                       <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+                       <header>
+                           <h3>Dolor Penatibus</h3>
+                       </header>
+                   </article>
+                   <article class="item">
+                       <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+                       <header>
+                           <h3>Orci Convallis</h3>
+                       </header>
+                   </article>
+               </div>-->
             </div>
 
         </div>
@@ -180,9 +183,9 @@
                 <a href="#" class="image featured"><img src="images/cal.jpg" alt="" /></a>
                 <a type="button" download="CV-Justin-Loroy.pdf" href="/dl/cv.pdf"><i class="fa fa-download"></i> <strong style="color:red;">Curriculum Vitae</strong></a>
             </header>
-            <p>Currently studying Computer Sciences in <a href="http://www.uclouvain.be">UCL</a>, Louvain-la-Neuve, Belgium. I am finishing my master in Artificial Intelligence and Big Data analysis this year.
+            <p style="text-align:justify;width:48%;float:left;">Currently studying Computer Sciences in <a href="http://www.uclouvain.be">UCL</a>, Louvain-la-Neuve, Belgium. I am finishing my master in Artificial Intelligence and Big Data analysis this year.
              I am very passionate about all technology-related topics, both hardware and software. Beside the courses' projects, I have some experience in developping, such as custom products for businesses.</p>
-            <p>Actuellement étudiant en Sciences Informatiques à l'<a href="http://www.uclouvain.be">UCL</a>, à Louvain-la-Neuve en Belgique, je termine mon master en Intelligence Artificielle et BigData.
+            <p style="text-align:justify;width:48%;float:right;">Actuellement étudiant en Sciences Informatiques à l'<a href="http://www.uclouvain.be">UCL</a>, à Louvain-la-Neuve en Belgique, je termine mon master en Intelligence Artificielle et BigData.
                 Tous les sujets relié à la technologie me passionent, aussi bien hardware que software. En plus de mes projets de cours, j'ai une certaine experience en développement,
                 notamment dans le cadre de produits personnalisés pour des entreprises.</p>
 
@@ -196,8 +199,9 @@
             <header>
                 <h2>Contact</h2>
             </header>
-
-            <p>Si vous désirez me contacter, n'hésitez pas à m'envoyer un mail à mon adresse privée  <a href="mailto:justin@loroy.be">justin@loroy.be</a></p>
+            <p><a href="mailto:justin@loroy.be">justin@loroy.be</a></p>
+            <p>To contact me, please do not hesitate to send me a email to my private address</p>
+            <p>Si vous désirez me contacter, n'hésitez pas à m'envoyer un mail à mon adresse privée</p>
 
         </div>
     </section>

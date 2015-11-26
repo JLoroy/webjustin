@@ -11,6 +11,18 @@ router.get('/magasin', function(req, res, next) {
     res.render('serious',{session:req.session});
 });
 
+router.get('/cg',  function(req, res, next) {
+    res.render('cg',{session:req.session});
+});
+
+router.get('/improc',  function(req, res, next) {
+    res.render('improc',{session:req.session});
+});
+
+router.get('/mhf',  function(req, res, next) {
+    res.render('mhf',{session:req.session});
+});
+
 router.post('/authorization', function(req,res,next){
     var perm = 0;
     var permName = 'Stranger';
