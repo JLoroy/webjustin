@@ -36,9 +36,9 @@ router.post('/authorization', function(req,res,next){
             perm = 2;
             permName = 'Bro';
             break;
-        case 'unintended':
+        case 'pandamour':
             perm = 3;
-            permName = 'Namoureuse';
+            permName = 'Juliette';
             break;
         case '0pa&0ma':
             perm = 4;
