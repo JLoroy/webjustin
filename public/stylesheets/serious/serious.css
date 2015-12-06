@@ -1633,7 +1633,7 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
+		color: #69b2e8;
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -2164,8 +2164,7 @@
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/carbon.png");
+				background-color: #548191;
 			}
 
 			#main > section.two {
