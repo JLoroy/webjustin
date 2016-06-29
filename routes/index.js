@@ -19,6 +19,10 @@ router.get('/improc',  function(req, res, next) {
     res.render('improc',{session:req.session});
 });
 
+router.get('/masterthesis',  function(req, res, next) {
+    res.render('masterthesis',{session:req.session});
+});
+
 router.get('/mhf',  function(req, res, next) {
     res.render('mhf',{session:req.session});
 });
@@ -38,7 +42,7 @@ router.post('/authorization', function(req,res,next){
             break;
         case 'pandamour':
             perm = 3;
-            permName = 'Juliette';
+            permName = 'Namoureuse';
             break;
         case '0pa&0ma':
             perm = 4;
@@ -72,21 +76,18 @@ router.post('/permName', function(req,res,next){
 
 });
 
-var aventCalendar = require("./aventCalendar");
-router.get('/avent',  function(req, res, next) {
+router.get('/nico',  function(req, res, next) {
     if(req.session.permission > 0){
-        res.render('avent',{session:req.session});
+        res.render('nico',{session:req.session});
     }
     else{
         res.render('unauthorized',{});
     }
 });
-router.get('/aventCalendar', aventCalendar.calendar);
 
-
-router.get('/nico',  function(req, res, next) {
-    if(req.session.permission > 0){
-        res.render('nico',{session:req.session});
+router.get('/flood',  function(req, res, next) {
+    if(req.session.permission > 0 || true){
+        res.render('flood',{session:req.session});
     }
     else{
         res.render('unauthorized',{});
@@ -107,19 +108,4 @@ router.get('/armand',  function(req, res, next) {
     res.render('armand',{session:req.session});
 });
 
-router.get('/hatonjeu',  function(req, res, next) {
-    res.render('hatonjeu',{session:req.session});
-});
-router.get('/hatonjeu/about',  function(req, res, next) {
-    res.render('hatonjeu/about',{session:req.session});
-});
-router.get('/hatonjeu/jeux',  function(req, res, next) {
-    res.render('hatonjeu/jeux',{session:req.session});
-});
-router.get('/hatonjeu/events',  function(req, res, next) {
-    res.render('hatonjeu/events',{session:req.session});
-});
-router.get('/hatonjeu/contact',  function(req, res, next) {
-    res.render('hatonjeu/contact',{session:req.session});
-});
 module.exports = router;

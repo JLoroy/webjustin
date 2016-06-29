@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Justin Loroy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="stylesheets/serious/serious.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="https://code.angularjs.org/1.3.15/i18n/angular-locale_fr-be.js"></script>
+    <script src="javascripts/home.js"></script>
+</head>
+<body  ng-App="home" ng-controller="homeController">
+
+<!-- Header -->
+<div id="header">
+
+    <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+            <h1 id="title">Master Thesis</h1>
+            <p>Detecting User's Habits</p>
+            <span class="image avatar48"><img src="http://i.imgur.com/CYU8JsN.gif" alt="" /></span>
+            <a style="width:50px;height:50px;" href="http://i.imgur.com/CYU8JsN.gif"></a>
+        </div>
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+            -->
+            <ul>
+                <li><a href="/#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                <li><a href="/#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                <li><a href="/#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                <li><a href="/#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+            </ul>
+            <ul>
+                <li ng-if="permission>0"><a href="/blog"><span class="label">Blog</span></a></li>
+                <li ng-if="permission>0"><a href="/nico"><span class="label">Nico</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="bottom">
+
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="https://twitter.com/JustinLoroy" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/justin.loroy" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <!--<li><a href="https://github.com/JLoroy" class="icon fa-github"><span class="label">Github</span></a></li>-->
+            <li><a href="mailto:justin@loroy.be" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://www.linkedin.com/in/justin-loroy-885a1462" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- Main -->
+<div id="main">
+    <section id="top" class="one dark cover">
+        <div class="container">
+            <header>
+                <h2 class="alt">Detecting User's Habits using GPS Data</h2>
+                <h3>Master Thesis</h3>
+            </header>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+        <h3 style="margin-bottom:50px;">Presentation</h3>
+        <p style="text-align: justify;">Smartphones, smartwatches are some examples of the new connected society. All these devices, the wearables, are following the user in their everyday’s life,
+            collecting data for the companies. Localization data is the main subject of this master thesis. The goal is to find a way to extract relevant informations from it.
+           The way it is achieved in this thesis is by using an algorithm that will output the most repetitive behaviours, called habits, in the list of all trajectories of a user.
+            </p>
+
+        <div class="container" style="margin-bottom:75px;">
+            <a href="images/masterthesis/163habits.png"><img style="width:90%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/163habits.png"></img></a>
+            <figcaption>Habits detected from a user</figcaption>
+        </div>
+
+        <p style="text-align: justify;">
+            This project used the <a href="http://research.microsoft.com/en-us/downloads/b16d359d-d164-469e-9fd4-daa38f2b2e13/">Geolife Dataset</a> constituted of 1,292,951 kilometers of trajectories
+            collected by 182 users mostly in Beijing over a time window of five years (2007 - 2012). Most of the users are students under 22 years old.
+            The Figure below , taken from the User’s Guide of the dataset, plots the distributions of all the GPS points in the city of Beijing. The heatmap shows the density of the points.
+        </p>
+        <div class="container" style="margin-bottom:75px;">
+            <a href="images/masterthesis/heatmap.png"><img style="width:60%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/heatmap.png"></img></a>
+            <figcaption>Geolife dataset heatmap</figcaption>
+        </div>
+
+
+            <p style="text-align: justify;">
+                Extracting knowledge about habits from GPS data is done in multiple phases. First the GPS points are transformed into a trajectory object by regrouping in a vector of useful information
+                extracted from the data. Second, a specific algorithm is used to detect relevant places. This will allow to sort the trajectories by Origin-Destination pair.
+                Finally the feature vector is used to regroup the trajectories that look alike. The larger clusters will represent the habits of the user.
+            </p>
+
+            <h3 style="margin-bottom:50px;">Place Labelling</h3>
+
+            <p style="text-align: justify;">
+                The first step is to detect relevant places for the user. This can be achieved by clustering every start and end point of the user into "places" with a custom algorithm.
+                The idea behind this is intuitive. If a trajectory is repeated enough times to become a habit, the origin and destination must visited at least this number of times.
+                The clustering part will point out the places where the user goes frequently. This will allow the program to eliminate all trajectories that can not be part of an habit.
+            </p>
+
+        <div style="display: inline-block;">
+            <div style="width:48%;float:left;margin-bottom:75px;">
+                <a href="images/masterthesis/42allpoints.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/42allpoints.png"></img></a>
+                <figcaption>Every start (red) and end points (blue) of every trajectory of a user</figcaption>
+            </div>
+
+            <div style="width:48%;float:right;margin-bottom:75px;">
+                <a href="images/masterthesis/42zoomlabels.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/42zoomlabels.png"></img></a>
+                <figcaption>Cluster found in orange</figcaption>
+            </div>
+        </div>
+
+
+            <h3 style="margin-bottom:50px;">Trajectory Labelling</h3>
+
+            <p style="text-align: justify;">
+                Once the relevant places are detected, the trajectories are regrouped following the Origin/Destination pair. Only the group with enough occurence (determined by a threshold) are kept.
+                Inside these group, we analyse the features of the trajectory to see if there is a recurring pattern inside it. Interesting features to look at are : Start Time and Length.
+            </p>
+            <p style="text-align: justify;">In this example we look at every trajectories recorded between the places <strong>2</strong> and <strong>4</strong>. We can see two habits in orange and green that have been detected. </p>
+
+
+            <div style="display: inline-block;margin:50px;">
+                <a href="images/masterthesis/163habits42.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/163habits42.png"></img></a>
+                <figcaption>Example of two habits going from the same origin to the same destination</figcaption>
+
+
+                <div style="width:48%;float:left;margin-bottom:75px;">
+                    <a href="images/masterthesis/StartimeFA.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/StartimeFA.png"></img></a>
+                    <figcaption>Start Time of the trajectories (x axis is only the ordonated index of the trajectory)</figcaption>
+                    <a href="images/masterthesis/starttimelengthFA.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/starttimelengthFA.png"></img></a>
+                    <figcaption>Start Time of the trajectories in relation with the Length</figcaption>
+                </div>
+
+                <div style="width:48%;float:right;margin-bottom:75px;">
+                    <a href="images/masterthesis/lengthFA.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/lengthFA.png"></img></a>
+                    <figcaption>Length of the trajectories (x axis is only the ordonated index of the trajectory)</figcaption>
+                    <a href="images/masterthesis/DurationFA.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/DurationFA.png"></img></a>
+                    <figcaption>The duration of the trajectories does not allow a clear separation of the two habits</figcaption>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom:50px;">Results</h3>
+
+            <div style="display: inline-block;margin:50px;">
+                <div style="width:48%;float:left;margin-bottom:75px;">
+                    <p style="text-align: justify;">In total the program found <strong>254</strong> habits among the <strong>182</strong> users. However, the vast majority of the habits are detected for the user with a larger
+                        quantity of data. If we look only at the users with more than 150 trajectories, we find on average 7.15 habits per user. The habits represent 10% of the total data. </p>
+                </div>
+
+                <div style="width:48%;float:right;margin-bottom:75px;">
+                    <a href="images/masterthesis/results.png"><img style="width:100%;box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);" src="images/masterthesis/results.png"></img></a>
+                </div>
+            </div>
+
+
+
+
+            <a type="button" download="DetectingUserHabitsInTrajectories.pdf" href="/dl/master_thesis.pdf"><i class="fa fa-download"></i> <strong style="color:red;">Download the master thesis</strong></a>
+
+
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li><p ng-if="connected">Permission level {{permission}}</p></li>
+        <!--<li><a href="http://tonyholmsten.deviantart.com/art/killer-is-dead-concept-art-407343587">Killer is Dead Concept art by Tony holmsten</a></li>-->
+        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollzer.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
