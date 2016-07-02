@@ -86,7 +86,7 @@ router.get('/nico',  function(req, res, next) {
 });
 
 router.get('/flood',  function(req, res, next) {
-    if(req.session.permission > 0 || true){
+    if(req.session.permission > 0){
         res.render('flood',{session:req.session});
     }
     else{
